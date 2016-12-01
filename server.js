@@ -5,7 +5,8 @@ var Throttle = require('throttle');
 
 
 const server = http.createServer((req, res) => {
-    console.log("Request received");
+    console.log('Request received for host %s',req.headers.host);
+
     var jsonStream = req.pipe(new Throttle(100000))
         .pipe(JSONStream.parse('*'))
         .pipe(es.map(function (data, callback) {
