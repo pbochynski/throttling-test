@@ -1,0 +1,17 @@
+{
+  "name": "throttling-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "JSONStream": "^1.2.1",
+    "event-stream": "^3.3.4",
+    "request": "^2.79.0",
+    "throttle": "^1.0.3"
+  }
+}

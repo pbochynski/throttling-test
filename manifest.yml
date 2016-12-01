@@ -1,0 +1,7 @@
+---
+applications:
+- name: throttling-test
+  memory: 64M
+  host: throttling-test
+  buildpack: https://github.com/heroku/heroku-buildpack-nodejs
+  command: node server.js
